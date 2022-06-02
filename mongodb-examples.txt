@@ -1,0 +1,393 @@
+# PRODUCT TABLE
+{
+    sku: ObjectId("572436"),
+    name: "BridXe T-Shirt Lorem Ipsum Dolor Sit",
+    price: 19.99,
+    quantity: {
+        {
+            color: "black", 
+            size: "small",
+            quantity: NumberInt(52),
+        },
+        {
+            color: "black", 
+            size: "medium",
+            quantity: NumberInt(45),
+        },
+        {
+            color: "black", 
+            size: "large",
+            quantity: NumberInt(56),
+        },
+        {
+            color: "purple", 
+            size: "small",
+            quantity: NumberInt(47),
+        },
+        {
+            color: "purple", 
+            size: "medium",
+            quantity: NumberInt(41),
+        },
+        {
+            color: "purple", 
+            size: "large",
+            quantity: NumberInt(25),
+        }
+    }
+    tax: 0.085,
+    description: "A T-Shirt You Can Wear",
+    picture: {
+        {
+            color: "black",
+            images: ["s3://product/572436/black1.jpg", "s3://product/572436/black2.jpg", "s3://product/572436/black3.jpg"]
+        },
+        {
+            color: "purple",
+            images: ["s3://product/572436/purple1.jpg", "s3://product/572436/purple2.jpg", "s3://product/572436/purple3.jpg"]
+        },
+    }
+    model: {
+        {
+            color: "black",
+            model: "s3://product/572436/black.glb"
+        },
+        {
+            color: "purple",
+            model: "s3://product/572436/purple.glb"
+        }
+    }
+    nft_contract_address: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    sku: ObjectId("572437"),
+    name: "BridXe T-Shirt Lorem Ipsum",
+    price: 29.99,
+    quantity: {
+        {
+            color: "black", 
+            size: "small",
+            quantity: NumberInt(32),
+        },
+        {
+            color: "black", 
+            size: "medium",
+            quantity: NumberInt(35),
+        },
+        {
+            color: "black", 
+            size: "large",
+            quantity: NumberInt(36),
+        },
+        {
+            color: "purple", 
+            size: "small",
+            quantity: NumberInt(37),
+        },
+        {
+            color: "purple", 
+            size: "medium",
+            quantity: NumberInt(31),
+        },
+        {
+            color: "purple", 
+            size: "large",
+            quantity: NumberInt(15),
+        }
+    }
+    tax: 0.085,
+    description: "A T-Shirt You Can Wear",
+    picture: {
+        {
+            color: "black",
+            images: ["s3://product/572437/black1.jpg", "s3://product/572437/black2.jpg", "s3://product/572437/black3.jpg"]
+        },
+        {
+            color: "purple",
+            images: ["s3://product/572437/purple1.jpg", "s3://product/572437/purple2.jpg", "s3://product/572437/purple3.jpg"]
+        },
+    }
+    model: {
+        {
+            color: "black",
+            model: "s3://product/572437/black.glb"
+        },
+        {
+            color: "purple",
+            model: "s3://product/572437/purple.glb"
+        }
+    }
+    nft_contract_address: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    sku: ObjectId("572438"),
+    name: "BridXe T-Shirt",
+    price: 19.99,
+    quantity: {
+        {
+            color: "black", 
+            size: "small",
+            quantity: NumberInt(77),
+        },
+        {
+            color: "black", 
+            size: "medium",
+            quantity: NumberInt(15),
+        },
+        {
+            color: "black", 
+            size: "large",
+            quantity: NumberInt(32),
+        },
+        {
+            color: "purple", 
+            size: "small",
+            quantity: NumberInt(18),
+        },
+        {
+            color: "purple", 
+            size: "medium",
+            quantity: NumberInt(24),
+        },
+        {
+            color: "purple", 
+            size: "large",
+            quantity: NumberInt(27),
+        }
+    }
+    tax: 0.085,
+    description: "A T-Shirt You Can Wear",
+    picture: {
+        {
+            color: "black",
+            images: ["s3://product/572438/black1.jpg", "s3://product/572438/black2.jpg", "s3://product/572438/black3.jpg"]
+        },
+        {
+            color: "purple",
+            images: ["s3://product/572438/purple1.jpg", "s3://product/572438/purple2.jpg", "s3://product/572438/purple3.jpg"]
+        },
+    }
+    model: {
+        {
+            color: "black",
+            model: "s3://product/572438/black.glb"
+        },
+        {
+            color: "purple",
+            model: "s3://product/572438/black.glb"
+        }
+    }
+    nft_contract_address: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    sku: ObjectId("572439"),
+    name: "BridXe T-Shirt Lorem",
+    price: 19.99,
+    quantity: {
+        {
+            color: "black", 
+            size: "small",
+            quantity: NumberInt(67),
+        },
+        {
+            color: "black", 
+            size: "medium",
+            quantity: NumberInt(13),
+        },
+        {
+            color: "black", 
+            size: "large",
+            quantity: NumberInt(37),
+        },
+        {
+            color: "purple", 
+            size: "small",
+            quantity: NumberInt(18),
+        },
+        {
+            color: "purple", 
+            size: "medium",
+            quantity: NumberInt(21),
+        },
+        {
+            color: "purple", 
+            size: "large",
+            quantity: NumberInt(20),
+        }
+    }
+    tax: 0.085,
+    description: "A T-Shirt You Can Wear",
+    picture: {
+        {
+            color: "black",
+            images: ["s3://product/572439/black1.jpg", "s3://product/572439/black2.jpg", "s3://product/572439/black3.jpg"]
+        },
+        {
+            color: "purple",
+            images: ["s3://product/572439/purple1.jpg", "s3://product/572439/purple2.jpg", "s3://product/572439/purple3.jpg"]
+        },
+    }
+    model: {
+        {
+            color: "black",
+            model: "s3://product/572439/black.glb"
+        },
+        {
+            color: "purple",
+            model: "s3://product/572439/black.glb"
+        }
+    }
+    nft_contract_address: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+}
+
+
+# SALES TABLE
+{
+    sku: ObjectId("572436"),
+    ownerid: NumberInt(1),
+    sales: NumberInt(1563),
+    revenue: 28759.20
+},
+{
+    sku: ObjectId("572437"),
+    ownerid: NumberInt(1),
+    sales: NumberInt(796),
+    revenue: 20138.80
+},
+{
+    sku: ObjectId("572438"),
+    ownerid: NumberInt(1),
+    sales: NumberInt(25693),
+    revenue: 472751.20
+},
+{
+    sku: ObjectId("572439"),
+    ownerid: NumberInt(1),
+    sales: NumberInt(12393),
+    revenue: 198288.00
+},
+{
+    sku: ObjectId("572440"),
+    ownerid: NumberInt(2),
+    sales: NumberInt(100),
+    revenue: 10000.00
+}
+
+
+# PURCHASERS TABLE
+{
+    orderid: ObjectId("00005"),
+    userid: ObjectId("00001"),
+    sku_list: [ObjectId("572436"), ObjectId("572438")],
+    paid: 57.84,
+    date: ISODate("2021-06-07T13:48:15.000Z"),
+    status: "Unfulfilled"
+},
+{
+    orderid: ObjectId("00004"),
+    userid: ObjectId("00004"),
+    sku_list: [ObjectId("572437")],
+    paid: 23.84,
+    date: ISODate("2021-06-07T13:48:12.000Z"),
+    status: "Unfulfilled"
+},
+{
+    orderid: ObjectId("00003"),
+    userid: ObjectId("00002"),
+    sku_list: [ObjectId("572439")],
+    paid: 31.04,
+    date: ISODate("2021-06-07T13:48:10.000Z"),
+    status: "Shipped"
+},
+{
+    orderid: ObjectId("00002"),
+    userid: ObjectId("00003"),
+    sku_list: [ObjectId("572439")],
+    paid: 31.04,
+    date: ISODate("2021-06-07T13:48:08.000Z"),
+    status: "Shipped"
+},
+{
+    orderid: ObjectId("00001"),
+    userid: ObjectId("00005"),
+    sku_list: [ObjectId("572439")],
+    paid: 31.04,
+    date: ISODate("2021-06-07T13:48:07.000Z"),
+    status: "Returned"
+},
+
+
+# USERS TABLE
+{
+    userid: ObjectId("00001"),
+    name: "Maria Lubin",
+    email: "loremipsumdolce@gmail.com",
+    address: "720 Test Street, City, AZ 00005",
+    wallet: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    userid: ObjectId("00002"),
+    name: "Allison Dokidis",
+    email: "loremipsum431lpn@gmail.com",
+    address: "720 Test Street, City, AZ 00005",
+    wallet: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    userid: ObjectId("00003"),
+    name: "Jocelyn Ekstorm Bothman",
+    email: "lorem114dolor@gmail.com",
+    address: "720 Test Street, City, AZ 00005",
+    wallet: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    userid: ObjectId("00004"),
+    name: "Cheyenne George",
+    email: "loremipsumdolor22@gmail.com",
+    address: "720 Test Street, City, AZ 00005",
+    wallet: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+},
+{
+    userid: ObjectId("00005"),
+    name: "Desirae vaccaro",
+    email: "loremipolon2@gmail.com",
+    address: "720 Test Street, City, AZ 00005",
+    wallet: "0xBA22017077F28aCf2Dd92Ec653E1bD2d5E6BFEd6"
+}
+
+
+
+# INSIGHTS TABLE
+{
+    sku: ObjectId("572436"),
+    sales_history: {
+        {
+            date: ISODate("2021-06-07T00:00:00.000Z"),
+            sales: 5
+        },
+        {
+            date: ISODate("2021-06-06T00:00:00.000Z"),
+            sales: 7
+        },
+        {
+            date: ISODate("2021-06-05T00:00:00.000Z"),
+            sales: 12
+        },
+    }
+},
+{
+    sku: ObjectId("572437"),
+    sales_history: {
+        {
+            date: ISODate("2021-06-07T00:00:00.000Z"),
+            sales: 24
+        },
+        {
+            date: ISODate("2021-06-06T00:00:00.000Z"),
+            sales: 5
+        },
+        {
+            date: ISODate("2021-06-05T00:00:00.000Z"),
+            sales: 9
+        },
+    }
+}
