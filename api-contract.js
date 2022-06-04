@@ -68,12 +68,12 @@
 */
 
 /**
- * @api {get} /api/users/getUserById Get User By Id
- * @apiName Get User By Id
+ * @api {get} /api/purchases/getPurchasesByUserId Get Purchasers By User Id
+ * @apiName Get Purchasers By User Id
  * @apiHeader {String} Authorization Users unique access-key.
- * @apiParam {String} ownerId  ownerId `Mandatory`.
- * @apiGroup Users
- * @apSkuescription  Retrieve User By Id
+ * @apiParam {String} userId  userId `Mandatory`.
+ * @apiGroup Purchases
+ * @apSkuescription  Retrieve Purchasers By User Id
 */
 
 /**
