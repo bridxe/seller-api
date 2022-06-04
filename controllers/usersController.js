@@ -1,12 +1,12 @@
 /**
- * @api {get} /api/users/getUsersById Get Users By Id
- * @apiName Get Users By Id
+ * @api {get} /api/users/getUserById Get User By Id
+ * @apiName Get User By Id
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} ownerId  ownerId `Mandatory`.
  * @apiGroup Users
- * @apSkuescription  Retrieve Users By Id
+ * @apSkuescription  Retrieve User By Id
 */
-exports.getUsersById = async (req, res) => {
+exports.getUserById = async (req, res) => {
     try {
 
         // TO-DO: query database to get this data
