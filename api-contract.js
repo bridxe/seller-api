@@ -1,5 +1,5 @@
 /**
- * @api {get} /api/product/getProductbySku Get Product By Sku
+ * @api {get} /api/products/getProductbySku Get Product By Sku
  * @apiName Get Product By Sku
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} productSku  productSku `Mandatory`.
@@ -59,7 +59,7 @@
 */
 
 /**
- * @api {get} /api/purchases/getPurchasesByOrderId Get Purchasers By User Id
+ * @api {get} /api/purchases/getPurchasesByUserId Get Purchasers By User Id
  * @apiName Get Purchasers By User Id
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} ownerId  ownerId `Mandatory`.
@@ -77,7 +77,7 @@
 */
 
 /**
- * @api {get} /api/insights/getInsightsById Get Users By Id
+ * @api {get} /api/insights/getInsightsById Get Insights By Id
  * @apiName Get Insights By Id
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} ownerId  ownerId `Mandatory`.
