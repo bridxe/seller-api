@@ -6,9 +6,9 @@ exports.getProductBySku = Joi.object({
 
 exports.postProduct = {
     name: Joi.string().required(),
-    price: Joi.decimal().required(),
+    price: Joi.number().required(),
     quantity: Joi.array().required(),
-    tax: Joi.decimal().required(),
+    tax: Joi.number().required(),
     description: Joi.string().required(),
     picture: Joi.array().required(),
     model: Joi.array().required(),

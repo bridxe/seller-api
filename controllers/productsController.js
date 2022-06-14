@@ -28,9 +28,9 @@ exports.getProductBySku = async (req, res) => {
  * @apiName Post Product 
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} name  name `Mandatory`.
- * @apiParam {Decimal} price  price `Mandatory`.
+ * @apiParam {Number} price  price `Mandatory`.
  * @apiParam {Array} quantity  quantity `Mandatory`.
- * @apiParam {Decimal} tax  tax `Mandatory`.
+ * @apiParam {Number} tax  tax `Mandatory`.
  * @apiParam {String} description  description `Mandatory`.
  * @apiParam {Array} picture  picture `Mandatory`.
  * @apiParam {Array} model  model `Mandatory`.
