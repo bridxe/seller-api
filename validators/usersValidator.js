@@ -1,5 +1,5 @@
 var Joi = require("joi");
 
-exports.getUserById = {
+exports.getUserById = Joi.object({
     ownerId: Joi.string().required()
-};
+});

@@ -1,9 +1,9 @@
 var Joi = require("joi");
 
-exports.getSalesByOwner = {
+exports.getSalesByOwner = Joi.object({
     ownerId: Joi.string().required()
-};
+});
 
-exports.getSalesBySku = {
+exports.getSalesBySku = Joi.object({
     productSku: Joi.string().required()
-};
+});

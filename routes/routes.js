@@ -14,46 +14,46 @@ module.exports = function (app, validate) {
     /*Account Route Start */
     //insightsController
     app.get(
-        "/api/insights/getInsightsById", validate.body(insightsValidator.getInsightsById),
+        "/api/insights/getInsightsById", validate.query(insightsValidator.getInsightsById),
         insightsController.getInsightsById
     );
 
     //productsController
     app.get(
-        "/api/products/getProductbySku", validate.body(productsValidator.getProductBySku),
+        "/api/products/getProductbySku", validate.query(productsValidator.getProductBySku),
         productsController.getProductBySku
     );
 
     app.post(
-        "/api/products/postProduct", validate.body(productsValidator.postProduct),
+        "/api/products/postProduct", validate.query(productsValidator.postProduct),
         productsController.postProduct
     );
 
     // purchasesController
     app.get(
-        "/api/purchases/getPurchasesByOrderId", validate.body(purchasesValidator.getPurchasesByOrderId),
+        "/api/purchases/getPurchasesByOrderId", validate.query(purchasesValidator.getPurchasesByOrderId),
         purchasesController.getPurchasesByOrderId
     );
 
     app.get(
-        "/api/purchases/getPurchasesByUserId", validate.body(purchasesValidator.getPurchasesByUserId),
+        "/api/purchases/getPurchasesByUserId", validate.query(purchasesValidator.getPurchasesByUserId),
         purchasesController.getPurchasesByUserId
     );
 
     // salesController
     app.get(
-        "/api/sales/getSalesbyOwner", validate.body(salesController.getSalesByOwner),
+        "/api/sales/getSalesbyOwner", validate.query(salesValidator.getSalesByOwner),
         salesController.getSalesByOwner
     );
 
     app.get(
-        "/api/sales/getSalesbySku", validate.body(salesController.getSalesBySku),
+        "/api/sales/getSalesbySku", validate.query(salesValidator.getSalesBySku),
         salesController.getSalesBySku
     );
 
     // usersController
     app.get(
-        "/api/users/getUsersById", validate.body(usersController.getUserById),
+        "/api/users/getUsersById", validate.query(usersValidator.getUserById),
         usersController.getUserById
     );
 }
