@@ -1,5 +1,5 @@
 var Joi = require("joi");
 
-exports.getInsightsById = {
+exports.getInsightsById = Joi.object({
     ownerId: Joi.string().required()
-};
+});

@@ -1,3 +1,5 @@
+Sales = require('../models/Sales')
+
 /**
  * @api {get} /api/sales/getSalesbyOwner Get Sales By Owner
  * @apiName Get Sales By Owner
@@ -9,10 +11,14 @@
 exports.getSalesByOwner = async (req, res) => {
     try {
 
-        // TO-DO: query database to get this data
+        // query database to get this data
+        const {ownerId} = req.query;
+        console.log(ownerId);
+        var resdata = await Sales.find({ownerid: ownerId}).exec();
+        console.log(resdata);
 
-        // TO-DO: put response from query inside data
-        return res.status(200).json({ status: true, data: { } });
+        // put response from query inside data
+        return res.status(200).json({ status: true, data: resdata });
 
     } catch (error) {
         return res.status(500).json({ status: false, data: { error: error } });
@@ -31,9 +37,11 @@ exports.getSalesBySku = async (req, res) => {
     try {
 
         // TO-DO: query database to get this data
+        const {productSku} = req.query;
+        var resdata = await Sales.findOne({sku: productSku}).exec();
 
         // TO-DO: put response from query inside data
-        return res.status(200).json({ status: true, data: { } });
+        return res.status(200).json({ status: true, data: resdata });
 
     } catch (error) {
         return res.status(500).json({ status: false, data: { error: error } });

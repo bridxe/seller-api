@@ -1,18 +1,22 @@
+Purchases = require('../models/Purchasers')
+
 /**
  * @api {get} /api/purchases/getPurchasesByOrderId Get Purchasers By Order Id
  * @apiName Get Purchasers By Order Id
  * @apiHeader {String} Authorization Users unique access-key.
- * @apiParam {String} ownerId  ownerId `Mandatory`.
+ * @apiParam {String} orderId  orderId `Mandatory`.
  * @apiGroup Purchases
  * @apSkuescription  Retrieve Purchasers By Order Id
 */
 exports.getPurchasesByOrderId = async (req, res) => {
     try {
 
-        // TO-DO: query database to get this data
+        // query database to get this data
+        const {orderId} = req.query;
+        var resdata = await Purchases.findOne({ orderid: orderId }).exec();
 
-        // TO-DO: put response from query inside data
-        return res.status(200).json({ status: true, data: { } });
+        // put response from query inside data
+        return res.status(200).json({ status: true, data: resdata });
 
     } catch (error) {
         return res.status(500).json({ status: false, data: { error: error } });
@@ -30,10 +34,12 @@ exports.getPurchasesByOrderId = async (req, res) => {
 exports.getPurchasesByUserId = async (req, res) => {
     try {
 
-        // TO-DO: query database to get this data
+        // query database to get this data
+        const {userId} = req.query;
+        var resdata = await Purchases.findOne({ userId: userId}).exec();
 
-        // TO-DO: put response from query inside data
-        return res.status(200).json({ status: true, data: { } });
+        // put response from query inside data
+        return res.status(200).json({ status: true, data: resdata });
 
     } catch (error) {
         return res.status(500).json({ status: false, data: { error: error } });

@@ -1,3 +1,76 @@
+const express = require('express'),
+  app = express(),
+  port = process.env.PORT || 3000;
+
+mongoose = require('mongoose'),
+  Insights = require('./models/Insights'),
+  Products = require('./models/Products'),
+  Purchases = require('./models/Purchasers'),
+  Sales = require('./models/Sales'),
+  Users = require('./models/Users'), //created model loading here
+  bodyParser = require('body-parser');
+
+// mongoose instance connection url connection
+mongoose.Promise = global.Promise;
+var url = 'mongodb+srv://bridxe:zfhRmRQUasfgNFTV@bridxe-cms.9mcakb0.mongodb.net/BrideXe-CMS?retryWrites=true&w=majority';
+mongoose.connect(url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  ssl: true,
+}).then(() => {
+  console.log("Successfully connected to the database");
+}).catch(err => {
+  console.log('Could not connect to the database.', err);
+});
+
+
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+var validator = require("express-joi-validation").createValidator({
+  passError: true
+});
+
+require("./routes/routes.js")(app, validator);
+
+app.use((err, req, res, next) => {
+  console.log(err);
+  if (err && err.error && err.error.isJoi) {
+    console.log(err);
+
+    let errDetail = [];
+    if (err.error.details) {
+      err.error.details.map(function (item) {
+        var temp = {};
+        temp[item.context.key] = item.message;
+        errDetail.push(temp);
+      });
+    }
+    res.status(400).json({
+      Status: false,
+      Data: errDetail,
+      Message: "Model InValid"
+    });
+  } else {
+    // pass on to another error handler
+    res.status(500).json({
+      Status: false,
+      Data: err,
+      Message: "Error Occured"
+    });
+  }
+});
+
+app.use(function (req, res) {
+  res.status(404).send({ url: req.originalUrl + ' not found' })
+});
+
+app.listen(port);
+
+console.log('seller RESTful API server started on: ' + port);
+
 /**
  * @api {get} /api/products/getProductbySku Get Product By Sku
  * @apiName Get Product By Sku
@@ -10,7 +83,7 @@
 
 /**
  * @api {post} /api/product/postProduct Post Product
- * @apiName Post Product 
+ * @apiName Post Product
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} name  name `Mandatory`.
  * @apiParam {Number} price  price `Mandatory`.

@@ -1,9 +1,9 @@
 var Joi = require("joi");
 
-exports.getPurchasesByOrderId = {
-    ownerId: Joi.string().required()
-};
+exports.getPurchasesByOrderId = Joi.object({
+    orderId: Joi.string().required()
+});
 
-exports.getPurchasesByUserId = {
+exports.getPurchasesByUserId = Joi.object({
     userId: Joi.string().required()
-};
+});

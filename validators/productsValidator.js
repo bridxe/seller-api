@@ -1,16 +1,16 @@
 var Joi = require("joi");
 
-exports.getProductBySku = {
+exports.getProductBySku = Joi.object({
     productSku: Joi.string().required()
-};
+});
 
 exports.postProduct = {
     name: Joi.string().required(),
     price: Joi.number().required(),
-    quantity: Joi.object().required(),
+    quantity: Joi.array().required(),
     tax: Joi.number().required(),
     description: Joi.string().required(),
-    picture: Joi.object().required(),
-    model: Joi.object().required(),
+    picture: Joi.array().required(),
+    model: Joi.array().required(),
     nft_contract_address: Joi.string().required()
 };
