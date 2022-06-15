@@ -27,14 +27,15 @@ exports.getProductBySku = async (req, res) => {
  * @api {post} /api/products/postProduct Post Product
  * @apiName Post Product 
  * @apiHeader {String} Authorization Users unique access-key.
- * @apiParam {String} name  name `Mandatory`.
- * @apiParam {Number} price  price `Mandatory`.
- * @apiParam {Array} quantity  quantity `Mandatory`.
- * @apiParam {Number} tax  tax `Mandatory`.
- * @apiParam {String} description  description `Mandatory`.
- * @apiParam {Array} picture  picture `Mandatory`.
- * @apiParam {Array} model  model `Mandatory`.
- * @apiParam {String} nft_contract_address  nft_contract_address `Mandatory`.
+ * @apiBody {String} sku productSku `Mandatory`.
+ * @apiBody {String} name  name `Mandatory`.
+ * @apiBody {Number} price  price `Mandatory`.
+ * @apiBody {Array} quantity  quantity `Mandatory`.
+ * @apiBody {Number} tax  tax `Mandatory`.
+ * @apiBody {String} description  description `Mandatory`.
+ * @apiBody {Array} picture  picture `Mandatory`.
+ * @apiBody {Array} model  model `Mandatory`.
+ * @apiBody {String} nft_contract_address  nft_contract_address `Mandatory`.
  * @apiGroup Products
  * @apSkuescription  Create Product (TO-DO: calculate product Skus?)
 */
