@@ -24,7 +24,7 @@ exports.getProductBySku = async (req, res) => {
 }
 
 /**
- * @api {post} /api/product/postProduct Post Product
+ * @api {post} /api/products/postProduct Post Product
  * @apiName Post Product 
  * @apiHeader {String} Authorization Users unique access-key.
  * @apiParam {String} name  name `Mandatory`.
@@ -42,7 +42,8 @@ exports.postProduct = async (req, res) => {
     try {
 
         // insert data into database
-        const new_Product = new Products(req.query);
+        const new_Product = new Products(req.body);
+        console.log(new_Product) 
         var resdata = await new_Product.save();
 
         // put response from query inside data
