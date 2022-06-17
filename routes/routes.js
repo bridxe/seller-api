@@ -56,4 +56,9 @@ module.exports = function (app, validate) {
         "/api/users/getUsersById", validate.query(usersValidator.getUserById),
         usersController.getUserById
     );
+
+    app.post(
+        "/api/users/PostUser", validate.body(usersValidator.postUser),
+        usersController.postUser
+    );
 }
