@@ -4,7 +4,8 @@ exports.getProductBySku = Joi.object({
     productSku: Joi.string().required()
 });
 
-exports.postProduct = {
+exports.postProduct = Joi.object({
+    productSku : Joi.string().required(),
     name: Joi.string().required(),
     price: Joi.number().required(),
     quantity: Joi.array().required(),
@@ -13,4 +14,4 @@ exports.postProduct = {
     picture: Joi.array().required(),
     model: Joi.array().required(),
     nft_contract_address: Joi.string().required()
-};
+});

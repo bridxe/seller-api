@@ -23,9 +23,9 @@ module.exports = function (app, validate) {
         "/api/products/getProductbySku", validate.query(productsValidator.getProductBySku),
         productsController.getProductBySku
     );
-
+  
     app.post(
-        "/api/products/postProduct", validate.query(productsValidator.postProduct),
+        "/api/products/postProduct", validate.body(productsValidator.postProduct),
         productsController.postProduct
     );
 
@@ -55,5 +55,10 @@ module.exports = function (app, validate) {
     app.get(
         "/api/users/getUsersById", validate.query(usersValidator.getUserById),
         usersController.getUserById
+    );
+
+    app.post(
+        "/api/users/PostUser", validate.body(usersValidator.postUser),
+        usersController.postUser
     );
 }
